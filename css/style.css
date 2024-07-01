@@ -156,16 +156,23 @@ main #content_card .cards_news .news_content{
     padding: 5px;
 }
 main #content_card .cards_news .news_content h2{
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 300;
 }
 main #content_card .cards_news .news_content h3{
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 main #content_card .cards_news .news_content p{
-    font-size: 12px;
-    margin: 0;
+    font-size: 10px;
+    margin: 0 0 8px 0;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;  
