@@ -5,19 +5,28 @@ const getNews = async () => {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data.articles[5])
-      } catch (error) {
+        console.log(data.articles[0])
+        console.log('--------------------------------------')
+        console.log(data.articles[3].author)
+        console.log(data.articles[3].title)
+        console.log(data.articles[3].description)
+        console.log(data.articles[3].url)
+        console.log(data.articles[3].urlToImage)
+        console.log(data.articles[3].publishedAt)
+    } catch (error) {
         console.error('Erro ao buscar notícias:', error);
       }
 }
 
 getNews()
 
-data.articles[0].author
-data.articles[0].title
-data.articles[0].description
-data.articles[0].url
-data.articles[0].urlToImage
-data.articles[0].publishedAt
-data.articles[0].content
+// {
+//     source: { id: null, name: 'Helseo.com' },
+//     author: null,
+//     title: 'Show HN: Keyword Research Tool Without Fuzz',
+//     description: 'HelSEO helps you to gain insights in monthly search volumes of keywords for SEO.',
+//     url: 'https://helseo.com/',
+//     urlToImage: null,
+//     publishedAt: '2024-06-03T20:42:49Z',
 
+//   }
